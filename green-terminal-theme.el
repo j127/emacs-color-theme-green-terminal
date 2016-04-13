@@ -1,10 +1,10 @@
-;;; green-phosphor-theme.el --- A light color theme with muted, autumnal colors.
+;;; green-terminal-theme.el --- A theme that looks like my terminal
 ;;;
-;; Copyright 2015 Adam Alpern
+;; Based on green-phosphor theme, Copyright 2015 Adam Alpern
 ;;
-;; Author: Adam Alpern <adam.alpern@gmail.com>
-;; Maintainer: Adam Alpern <adam.alpern@gmail.com>
-;; URL: http://github.com/aalpern/emacs-color-theme-green-phosphor
+;; Authors: Adam Alpern <adam.alpern@gmail.com>, j127
+;; Maintainer: J. Cohen
+;; URL: http://github.com/j127/emacs-color-theme-green-terminal
 ;; Keywords: color, theme
 ;; Version: 1.0.0
 ;;
@@ -34,18 +34,18 @@
 ;; To use it, add this file to a directory in your load-path, then put
 ;; the following in your Emacs configuration file:
 ;;
-;;   (load-theme 'green-phosphor t)
+;;   (load-theme 'green-terminal t)
 ;;
 ;;; Code:
 
-(deftheme green-phosphor)
+(deftheme green-terminal)
 
 (custom-theme-set-faces
- 'green-phosphor
+ 'green-terminal
 
- '(default          ((t (:foreground "LimeGreen" :background "#001100" :inherit nil))))
- '(fringe           ((t (:background "#001100"))))
- '(cursor           ((t (:background "red"))))
+ '(default          ((t (:foreground "LimeGreen" :background "#1f1f1f" :inherit nil))))
+ '(fringe           ((t (:background "#000000"))))
+ '(cursor           ((t (:background "LimeGreen"))))
  '(highlight        ((t (:foreground "black" :background "green"))))
  '(region           ((t (:foreground "black" :background "LimeGreen"))))
  '(button           ((t (:inherit (link)))))
@@ -117,6 +117,6 @@
                   (file-name-as-directory
                    (file-name-directory load-file-name))))
 
-(provide-theme 'green-phosphor)
+(provide-theme 'green-terminal)
 
-;;; green-phosphor-theme.el ends here
+;;; green-terminal-theme.el ends here
